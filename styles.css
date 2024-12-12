@@ -1,0 +1,94 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: var(--header-bg);
+    color: var(--text-color);
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.uploader {
+    margin: 20px 0;
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: 300px;
+    border: 2px solid var(--canvas-border);
+    border-radius: 10px;
+    background-color: var(--canvas-bg);
+}
+
+.controls {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background: var(--button-bg);
+    color: var(--button-text);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background: var(--button-hover);
+}
+
+label {
+    color: var(--text-color);
+}
+
+input[type="range"] {
+    width: 100px;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background: var(--footer-bg);
+    color: var(--text-color);
+}
+
+/* Dark and Light Theme Variables */
+:root {
+    --header-bg: #121212;
+    --footer-bg: #121212;
+    --text-color: #ffffff;
+    --button-bg: #007ACC;
+    --button-text: #ffffff;
+    --button-hover: #005F9E;
+    --canvas-bg: #181818;
+    --canvas-border: #333;
+}
+
+.light {
+    --header-bg: #f4f4f4;
+    --footer-bg: #f4f4f4;
+    --text-color: #000000;
+    --button-bg: #007ACC;
+    --button-text: #ffffff;
+    --button-hover: #005F9E;
+    --canvas-bg: #ffffff;
+    --canvas-border: #ddd;
+}
